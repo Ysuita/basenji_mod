@@ -29,7 +29,7 @@ bam_cov.py
 basenji_data.py
 ```
 **
-[Next step 2]: Getting ATAC BigWig files and also getting hg38 Ensemble fasta files**
+[Next step 2]: Getting GSC1 (GB2) ATAC BigWig files and also getting hg38 Ensemble fasta files** (by Deniz)
 
 Training/Learn
 
@@ -51,9 +51,11 @@ Build model by using basenji_test.py
 
 **[Next Step]: Change basenji_test.py's parameters in a way that you would be able to retrive the result
 
-**[Nest Step]: Visualize the result of basenji_test.py****
+**[Nest Step]: Visualize the result of basenji_test.py**** (by Yusuke)
 
-Analysis
+[Next Step]: Idnetify input data for basenji_sat_bed.py (By Yusuke)
+
+Analysis 
 - Analysis 1: In-silico mutagenesis
   - Compute scores
     -  basenji_sat_bed.py: basenji_sat_bed.py
