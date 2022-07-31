@@ -49,7 +49,7 @@ Build model by using basenji_test.py
 
 (try basenji_test_genes.py by taking TensorFlow Saver file, Trained Basenji model and parameters file).
 
-**[Next Step]: Change basenji_test.py's parameters in a way that you would be able to retrive the result
+[Next Step]: Check input file for GSC and then apply it to basenji_test.py
 
 Analysis 
 - Analysis 1: In-silico mutagenesis
@@ -60,7 +60,3 @@ Analysis
 - Analysis 2: SNP activity difference
   - basenji_sad.py: SNP actviity difference score
   - basenji_sed.py: SNP expression difference score
-
-
-
-
