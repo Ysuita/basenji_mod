@@ -47,9 +47,11 @@ basenji_test.py
 ```
 Build model by using basenji_test.py 
 
-(try basenji_test_genes.py by taking TensorFlow Saver file, Trained Basenji model and parameters file).
+(Try basenji_test_genes.py by taking TensorFlow Saver file, Trained Basenji model and parameters file).
 
 [Next Step]: Check input file for GSC and then apply it to basenji_test.py
+Input file should be 
+statistics.json, sequences.bed, contigs.bed, targets.txt, acc.txt?
 
 Analysis 
 - Analysis 1: In-silico mutagenesis
