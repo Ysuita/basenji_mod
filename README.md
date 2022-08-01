@@ -52,11 +52,11 @@ Build model by using basenji_test.py
 [Next Step]: Check input file for GSC and then apply it to basenji_test.py
 Input file should be 
 
-- statistics.json
-- sequences.bed
-- contigs.bed
+(- statistics.json)
 - targets.txt
-- acc.txt
+(- sequences.bed)
+(- contigs.bed)
+(- acc.txt) this is output
 
 Analysis 
 - Analysis 1: In-silico mutagenesis
