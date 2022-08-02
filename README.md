@@ -13,6 +13,10 @@ Input file format for bansenji model:
 BigWig coverage tracks
 Genome FASTA file (hg38 ensemble)
 
+Use these modules if you use GPU in Oscar
+module load cuda/11.3.1
+module load gcc/10.2
+
 Workflow:
 - Preprocess
 - Learn
@@ -26,13 +30,13 @@ Proprocess (convert BAM file to ED5 (or BigWig file) by using FASTA file)
 basenji_data.py
 ```
 
+[NEXT STEP]: Train the model by using GSC Bigiwig data
+
 Training/Learn
 
 ```
 basenji_train.py
 ```
-module load cuda/11.3.1
-module load gcc/10.2
 
 The model got trained by using HDF5 (you can use basenji_training.sh). 
 
@@ -42,8 +46,7 @@ basenji_test.py
 ```
 Build model by using basenji_test.py 
 
-
-[Next Step]: Check input file for GSC and then apply it to basenji_test.py
+[Next Step]: Check input file for GSC and then apply it to basenji_test.py (run basenji_GSC_test.sh)
 
 [Next Step]: Hypo-parameter tuning (take a look at JSON file)
 
