@@ -23,13 +23,8 @@ Workflow:
 Proprocess (convert BAM file to ED5 (or BigWig file) by using FASTA file)
 
 ```
-bam_cov.py
-```
-```
 basenji_data.py
 ```
-**
-[Next step 2]: Getting GSC1 (GB2) ATAC BigWig files and also getting hg38 Ensemble fasta files** (by Deniz)
 
 Training/Learn
 
@@ -47,16 +42,10 @@ basenji_test.py
 ```
 Build model by using basenji_test.py 
 
-(Try basenji_test_genes.py by taking TensorFlow Saver file, Trained Basenji model and parameters file).
 
 [Next Step]: Check input file for GSC and then apply it to basenji_test.py
-Input file should be 
 
-(- statistics.json)
-- targets.txt
-(- sequences.bed)
-(- contigs.bed)
-(- acc.txt) this is output
+[Next Step]: Hypo-parameter tuning (take a look at JSON file)
 
 Analysis 
 - Analysis 1: In-silico mutagenesis
