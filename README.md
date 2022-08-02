@@ -30,7 +30,7 @@ Proprocess (convert BAM file to ED5 (or BigWig file) by using FASTA file)
 basenji_data.py
 ```
 
-[NEXT STEP]: Train the model by using GSC Bigiwig data
+[NEXT STEP]: Train the model by using GSC Bigwig data by **using hg38 FASTA file**
 
 Training/Learn
 
