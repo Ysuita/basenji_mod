@@ -60,4 +60,5 @@ Analysis
 (- Analysis 1: basenji_sat_vcf.py: VCF file for varient-centered mutagenesis)
 - Analysis 2: SNP activity difference
   - basenji_sad.py: SNP actviity difference score
+  -[NEXT STEP]: Run basenji_sad.sh to get outcome
   - basenji_sed.py: SNP expression difference score
