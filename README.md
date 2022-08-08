@@ -13,6 +13,10 @@ Input file format for bansenji model:
 BigWig coverage tracks
 Genome FASTA file (hg38 ensemble)
 
+Use these modules if you use GPU in Oscar
+module load cuda/11.3.1
+module load gcc/10.2
+
 Workflow:
 - Preprocess
 - Learn
@@ -23,21 +27,16 @@ Workflow:
 Proprocess (convert BAM file to ED5 (or BigWig file) by using FASTA file)
 
 ```
-bam_cov.py
-```
-```
 basenji_data.py
 ```
-**
-[Next step 2]: Getting GSC1 (GB2) ATAC BigWig files and also getting hg38 Ensemble fasta files** (by Deniz)
+
+[NEXT STEP]: Train the model by using GSC Bigwig data by **using hg38 FASTA file**
 
 Training/Learn
 
 ```
 basenji_train.py
 ```
-module load cuda/11.3.1
-module load gcc/10.2
 
 The model got trained by using HDF5 (you can use basenji_training.sh). 
 
@@ -47,25 +46,16 @@ basenji_test.py
 ```
 Build model by using basenji_test.py 
 
-(try basenji_test_genes.py by taking TensorFlow Saver file, Trained Basenji model and parameters file).
+[Next Step]: Check input file for GSC and then apply it to basenji_test.py (run basenji_GSC_test.sh)
 
-**[Next Step]: Change basenji_test.py's parameters in a way that you would be able to retrive the result
-
-**[Nest Step]: Visualize the result of basenji_test.py**** (by Yusuke)
-
-[Next Step]: Idnetify input data for basenji_sat_bed.py (By Yusuke)
+[Next Step]: Hypo-parameter tuning (take a look at JSON file)
 
 Analysis 
 - Analysis 1: In-silico mutagenesis
-  - Compute scores
-    -  basenji_sat_bed.py: basenji_sat_bed.py
-    -  basenji_sat_vcf.py: VCF file for varient-centered mutagenesis 
-  - Visualization: basenji_sat_plot.py 
+  - Compute scores by applying basenji_sat_bed.py: basenji_sat_bed.py (check basenji_sat_bed.sh)
+  - Visualization: basenji_sat_plot.py (check basenji_sat_plot.sh)
 
+(- Analysis 1: basenji_sat_vcf.py: VCF file for varient-centered mutagenesis)
 - Analysis 2: SNP activity difference
   - basenji_sad.py: SNP actviity difference score
   - basenji_sed.py: SNP expression difference score
-
-
-
-
