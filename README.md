@@ -30,8 +30,9 @@ Proprocess (convert BAM file to ED5 (or BigWig file) by using FASTA file)
 basenji_data.py
 ```
 
-[NEXT STEP]: Train the model by using GSC Bigwig data by **using hg38 FASTA file**
-all the script is ready - waiting for Deniz's ATAC GSC1 bigwig permission
+Trained with GSC1 ATAC merged bigwig file 
+
+[NEXT STEP]: Processing bigwig of GSC1 ATAC dup1 and dup2. Alingment on GSC2 ATAC. 
 
 Training/Learn
 
@@ -47,7 +48,7 @@ basenji_test.py
 ```
 Build model by using basenji_test.py 
 
-[Next Step]: Check input file for GSC and then apply it to basenji_test.py (run basenji_GSC_test.sh)
+[Next Step]: Run basenji_GSC_test.sh on GSC1 ATAC merged bigwig-trained model (0.h5?)
 
 [Next Step]: Hypo-parameter tuning (take a look at JSON file)
 
@@ -59,4 +60,5 @@ Analysis
 (- Analysis 1: basenji_sat_vcf.py: VCF file for varient-centered mutagenesis)
 - Analysis 2: SNP activity difference
   - basenji_sad.py: SNP actviity difference score
+  -[NEXT STEP]: Run basenji_sad.sh to get outcome
   - basenji_sed.py: SNP expression difference score
