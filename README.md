@@ -48,7 +48,8 @@ basenji_test.py
 ```
 Build model by using basenji_test.py 
 
-[Next Step]: Run basenji_GSC_test.sh on GSC1 ATAC merged bigwig-trained model (0.h5?)
+[Next Step]: Run basenji_GSC1_ATAC_test.sh on GSC1 ATAC merged bigwig-trained model (0.h5?)
+Visualize 0.h5 file 
 
 [Next Step]: Hypo-parameter tuning (take a look at JSON file)
 
