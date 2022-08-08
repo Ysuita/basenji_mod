@@ -31,6 +31,7 @@ basenji_data.py
 ```
 
 [NEXT STEP]: Train the model by using GSC Bigwig data by **using hg38 FASTA file**
+all the script is ready - waiting for Deniz's ATAC GSC1 bigwig permission
 
 Training/Learn
 
