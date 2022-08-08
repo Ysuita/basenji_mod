@@ -61,4 +61,5 @@ Analysis
 - Analysis 2: SNP activity difference
   - basenji_sad.py: SNP actviity difference score
   -[NEXT STEP]: Run basenji_sad.sh to get outcome
+  Visualize /gpfs/data/ntapinos/ysuita/basenji_mod/tutorials/output/rfx6_bed/sad.h5
   - basenji_sed.py: SNP expression difference score
