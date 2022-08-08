@@ -13,11 +13,13 @@
 #SBATCH --mail-type=END,FAIL,TIME_LIMIT,BEGIN
 #SBATCH --mail-user=yusuke_suita@brown.edu
 
+
+source /gpfs/data/ntapinos/ysuita/bin/activate
 module load cudnn/8.2.0 
 module load cuda/11.1.1 
 module load gcc/10.2
 
 output="/gpfs/data/ntapinos/ysuita/basenji_mod/data/GSC_ATAC"
-hg38="/gpfs/data/shared/databases/refchef_refs/grch38_release98/primary/Homo_sapiens.GRCh38.dna.primary_assembly.fa"
-bigwig="/gpfs/data/ntapinos/ysuita/basenji_mod/data/GSC_ATAC/GSC_ATAC_wigs.txt"
-/gpfs/data/ntapinos/ysuita/basenji_mod/bin/basenji_data.py -d .1 -g /users/ysuita/data/ysuita/basenji/tutorials/data/unmap_macro.bed -l 131072 -o $output -p 8 -t .1 -v .1 -w 128 $hg38 $bigwig
+hg38="/gpfs/data/ntapinos/ysuita/basenji_mod/data/Homo_sapiens.GRCh38.dna.primary_assembly.fa"
+bigwig="/gpfs/data/ntapinos/ysuita/basenji_mod/data/GSC_ATAC_wigs.txt"
+/gpfs/data/ntapinos/ysuita/basenji_mod/bin/basenji_data.py -d .1 -g /users/ysuita/data/ysuita/basenji/tutorials/data/unmap_macro.bed -l 131072 --local -o $output -p 8 -t .1 -v .1 -w 128 $hg38 $bigwig
