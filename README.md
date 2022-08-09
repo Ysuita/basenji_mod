@@ -48,7 +48,8 @@ basenji_test.py
 ```
 Build model by using basenji_test.py 
 
-[Next Step]: Run basenji_GSC_test.sh on GSC1 ATAC merged bigwig-trained model (0.h5?)
+[Next Step]: Run basenji_GSC1_ATAC_test.sh on GSC1 ATAC merged bigwig-trained model (0.h5?)
+Visualize 0.h5 file 
 
 [Next Step]: Hypo-parameter tuning (take a look at JSON file)
 
@@ -61,4 +62,5 @@ Analysis
 - Analysis 2: SNP activity difference
   - basenji_sad.py: SNP actviity difference score
   -[NEXT STEP]: Run basenji_sad.sh to get outcome
+  Visualize /gpfs/data/ntapinos/ysuita/basenji_mod/tutorials/output/rfx6_bed/sad.h5
   - basenji_sed.py: SNP expression difference score
