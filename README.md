@@ -29,8 +29,7 @@ BEFORE running a script below, run these commands to activate basenji
   export PATH=$BASENJIDIR/bin:$PATH
   export PYTHONPATH=$BASENJIDIR/bin:$PYTHONPATH
 
-Proprocess (convert BAM file to ED5 (or BigWig file) by using FASTA file)
-
+Proprocess (convert Bigwig file to TF files/bed files by using FASTA file)
 ```
 basenji_data.py
 ```
@@ -39,7 +38,6 @@ Trained with GSC1 ATAC merged bigwig file
 [NEXT STEP]: Processing bigwig of GSC1 ATAC dup1 and dup2. Alingment on GSC2 ATAC. 
 
 Training/Learn
-
 ```
 basenji_train.py
 ```
