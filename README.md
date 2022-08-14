@@ -39,7 +39,7 @@ Trained with GSC1 ATAC merged bigwig file
 
 Training/Learn
 ```
-basenji_train.py
+basenji_train.py (or basenji_train_GSC1_ATAC.sh)
 ```
 The model got trained by using HDF5 (you can use basenji_training.sh). 
 
