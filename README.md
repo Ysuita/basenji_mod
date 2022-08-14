@@ -51,7 +51,7 @@ Build model by using basenji_test.py
 
 [Next Step]: Run basenji_GSC1_ATAC_test.sh on GSC1 ATAC merged bigwig-trained model (0.h5?)
 -> ValueError: Dimension 0 in both shapes must be equal, but are 3 and 1. Shapes are [3] and [1]. for '{{node AssignAddVariableOp_3}} = AssignAddVariableOp[dtype=DT_FLOAT](AssignAddVariableOp_3/resource, Sum_2)' with input shapes: [], [1].
--> 
+-> Check metrics.py for keras
 
 Visualize 0.h5 file 
 
