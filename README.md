@@ -29,7 +29,6 @@ Proprocess (convert BAM file to ED5 (or BigWig file) by using FASTA file)
 ```
 basenji_data.py
 ```
-
 Trained with GSC1 ATAC merged bigwig file 
 
 [NEXT STEP]: Processing bigwig of GSC1 ATAC dup1 and dup2. Alingment on GSC2 ATAC. 
@@ -39,7 +38,6 @@ Training/Learn
 ```
 basenji_train.py
 ```
-
 The model got trained by using HDF5 (you can use basenji_training.sh). 
 
 Accuracy (Test gene expression predictions)
@@ -49,6 +47,9 @@ basenji_test.py
 Build model by using basenji_test.py 
 
 [Next Step]: Run basenji_GSC1_ATAC_test.sh on GSC1 ATAC merged bigwig-trained model (0.h5?)
+-> ValueError: Dimension 0 in both shapes must be equal, but are 3 and 1. Shapes are [3] and [1]. for '{{node AssignAddVariableOp_3}} = AssignAddVariableOp[dtype=DT_FLOAT](AssignAddVariableOp_3/resource, Sum_2)' with input shapes: [], [1].
+-> 
+
 Visualize 0.h5 file 
 
 [Next Step]: Hypo-parameter tuning (take a look at JSON file)
