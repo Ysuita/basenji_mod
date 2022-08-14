@@ -24,6 +24,11 @@ Workflow:
 - Regulatory Element Analysis
 - Variaent Analysis
 
+BEFORE running a script below, run these commands to activate basenji
+  export BASENJIDIR=/gpfs/data/ntapinos/ysuita/basenji_mod
+  export PATH=$BASENJIDIR/bin:$PATH
+  export PYTHONPATH=$BASENJIDIR/bin:$PYTHONPATH
+
 Proprocess (convert BAM file to ED5 (or BigWig file) by using FASTA file)
 
 ```
