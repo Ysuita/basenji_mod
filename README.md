@@ -42,6 +42,8 @@ Training/Learn
 basenji_train.py (or basenji_train_GSC1_ATAC.sh)
 ```
 The model got trained by using tfr files (you can use basenji_training.sh). 
+[NEXT STEP] Visualize loss/epoch (check trainer.py "VISUALIZATION"))
+
 
 Accuracy (Test gene expression predictions)
 ```
